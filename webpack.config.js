@@ -24,16 +24,23 @@ const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
 	entry: {
+		//Common styles of indexed pages
 		'main': path.resolve(__dirname, './src/scss/main/style.scss'),
-		'internal': path.resolve(__dirname, './src/scss/internal/style.scss'),
 
+		//Common styles of internal pages
+		'internal': path.resolve(__dirname, './src/scss/internal/style.scss'), 
+
+		//Common script of all pages
 		'common': path.resolve(__dirname, './src/js/common.js'),
 
-		'user-area': path.resolve(__dirname, './src/js/user-area.js'),
-
+		//Scripts for individual pages
 		'pages/index': path.resolve(__dirname, './src/js/pages/index.js'),
 		'pages/categories': path.resolve(__dirname, './src/js/pages/categories.js'),
 		'pages/product-cart': path.resolve(__dirname, './src/js/pages/product-cart.js'),
+
+		//Common script of internal pages
+		'user-area': path.resolve(__dirname, './src/js/user-area.js'),
+
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
