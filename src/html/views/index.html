@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <%= _.template(require('./../includes/head.html').default)() %>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="stylesheet" href="css/main.css" />
+    
+        <title>Webpack</title>
+    </head>
   <body>
       <%= _.template(require('./../includes/header.html').default)() %>
 
@@ -9,6 +17,7 @@
       </main>
 
       <%= _.template(require('./../includes/footer.html').default)() %>
-      <%= _.template(require('./../includes/scripts.html').default)() %>
+      <script src="js/common.js"></script>
+      <script src="js/pages/index.js"></script>
   </body>
 </html>
