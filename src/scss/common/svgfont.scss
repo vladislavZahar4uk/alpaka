@@ -1,4 +1,6 @@
-@import "variables";
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../../fonts" !default;
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
@@ -27,8 +29,48 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rock-n-roll {
-  &:before {
-    content: $icon-rock-n-roll; 
-  }
+.icon-marker:before {
+  content: "\e900";
+}
+.icon-star:before {
+  content: "\e901";
+}
+.icon-star-fill:before {
+  content: "\e902";
+}
+.icon-simp-arrow-right:before {
+  content: "\e903";
+}
+.icon-simp-arrow-left:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-arrow-left:before {
+  content: "\e906";
+}
+.icon-user:before {
+  content: "\e907";
+}
+.icon-heart-fill:before {
+  content: "\e908";
+}
+.icon-tent:before {
+  content: "\e909";
+}
+.icon-shopping-cart:before {
+  content: "\e90a";
+}
+.icon-textile:before {
+  content: "\e90c";
+}
+.icon-furniture:before {
+  content: "\e90d";
+}
+.icon-glass:before {
+  content: "\e90e";
+}
+.icon-heart:before {
+  content: "\e90f";
 }
