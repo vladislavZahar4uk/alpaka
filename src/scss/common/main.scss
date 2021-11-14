@@ -1,4 +1,10 @@
 body {
+    background-image: url('../../img/body-bg-left.jpg'), url('../../img/body-bg-middle.jpg'), url('../../img/body-bg-right.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, top center, top right;
+
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+
+    color: #060606;
 }
