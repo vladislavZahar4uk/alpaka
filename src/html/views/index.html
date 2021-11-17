@@ -13,10 +13,47 @@
     
         <title>Alpaka</title>
     </head>
-  <body>
-      <%= _.template(require('./../includes/header.html').default)() %>
-      <%= _.template(require('./../includes/footer.html').default)() %>
-      <script src="js/common.js"></script>
-      <script src="js/pages/index.js"></script>
-  </body>
+    <body>
+        <%= _.template(require('./../includes/header.html').default)() %>
+
+        <main class="main">
+            <div class="main-slider js-main-banner">
+                <div class="main-slider__slide" style="background-image: url(../../img/main-banner.jpg);"></div>
+                <div class="main-slider__slide" style="background-image: url(../../img/main-banner.jpg);"></div>
+                <div class="main-slider__slide" style="background-image: url(../../img/main-banner.jpg);"></div>
+                <div class="main-slider__slide" style="background-image: url(../../img/main-banner.jpg);"></div>
+            </div>
+
+            <div class="section-heading">Новинки</div>
+
+            <div class="product-preview">
+                <div class="product-preview__label new">Новинка</div>
+                <div class="product-preview__favorite added">
+                    <span class="icon icon-heart"></span>
+                </div>
+
+                <div class="product-preview__bg" style="background-image: url(../../img/main-banner.jpg);"></div>
+
+                <div class="product-preview__name">Виг вам</div>
+                <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                <div class="product-preview__code">Артикул: 15026</div>
+
+                <div class="product-preview__prices">
+                    <div class="product-preview__discount">3600 грн</div>
+                    <div class="product-preview__price">3100 грн</div>
+                </div>
+
+                <div class="product-preview__buy">
+                    <span class="icon icon-shopping"></span>
+                    Купити
+                </div>
+            </div>
+        </main>
+
+
+
+        <%= _.template(require('./../includes/footer.html').default)() %>
+        <script src="js/pages/index.js"></script>
+        <script src="js/common.js"></script>
+    </body>
 </html>

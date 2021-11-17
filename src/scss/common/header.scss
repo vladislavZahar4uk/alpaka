@@ -6,6 +6,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        margin-bottom: 23px;
 
         &-item {
             display: flex;
@@ -13,7 +14,7 @@
             justify-content: center;
 
             &:first-child {
-                margin-right: 30px;
+                margin-right: 50px;
             }
 
             .icon {
@@ -41,15 +42,20 @@
             align-content: center;
 
             li {
-                margin-right: 30px;
+                margin-right: 55px;
             }
 
             a {
-                padding-bottom: 10px;
+                padding-bottom: 5px;
                 border-bottom: 2px solid #fff;
+                transition: color .3s;
 
                 &.active {
                     border-color: #DCA370;
+                }
+
+                &:hover {
+                    color: #DCA370;
                 }
             }
         }
@@ -60,6 +66,7 @@
         align-content: center;
         width: 370px;
         height: 49px;
+        margin-left: auto;
         border: 1px solid #DCA370;
         border-radius: 49px;
 
@@ -80,6 +87,40 @@
                 font-size: 20px;
                 color: #DCA370;
             }
+        }
+    }
+
+    .selected {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 49px;
+        height: 49px;
+        margin-left: 20px;
+        border: 1px solid #DCA370;
+        border-radius: 50%;
+        cursor: pointer;
+
+        .icon {
+            font-size: 25px;
+            color: #DCA370;
+        }
+
+        .count {
+            position: absolute;
+            top: 9px;
+            left: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-size: 10px;
+            background-color: #CA6D80;
+            color: #fff;
         }
     }
 }

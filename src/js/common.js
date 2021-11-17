@@ -1,5 +1,3 @@
-import jQuery from "jquery";
-
-jQuery(function() {
-
+$(function() {
+    console.log('common js file running')
 });

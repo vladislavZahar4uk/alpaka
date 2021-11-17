@@ -42,8 +42,12 @@ a {
   box-sizing: border-box;
 }
 
-input,  button {
+input, button {
   padding: initial;
   border: initial;
   background-color: initial;
+}
+
+button {
+  cursor: pointer;
 }
