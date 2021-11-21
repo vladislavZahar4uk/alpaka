@@ -15,13 +15,13 @@ body {
 }
 
 .section-heading {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     font-size: 18px;
     text-transform: uppercase;
-
 
     &::before,
     &::after {
@@ -34,7 +34,6 @@ body {
     &::before {
         margin-right: 35px;
     }
-
 
     &::after {
         margin-left: 35px;
@@ -50,6 +49,8 @@ body {
     height: 510px;
     padding: 15px;
     border: 1px solid #9CA9AE;
+
+    cursor: pointer;
 
     &__label {
         position: absolute;
@@ -152,5 +153,93 @@ body {
             font-size: 20px;
             color: #fff;
         }
+    }
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+    border: 2px solid #9CA9AE;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: border-color .2s;
+    cursor: pointer;
+
+    .icon {
+        font-size: 11px;
+        color: #9CA9AE;
+        transition: color .2s;
+    }
+
+    &.right {
+        right: 0;
+    }
+
+    &.left {
+        right: 34px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -14px;
+        width: 12px;
+        background-color: #fff;
+    }
+
+    &:hover {
+        border-color: #CD9C72;
+
+        .icon {
+            color: #CD9C72;
+        }
+    }
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: 500;
+    background-color: #DCA370;
+    color: #fff;
+    cursor: pointer;
+
+    .icon {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    &.md {
+        width: 248px;
+    }
+}
+
+.input {
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #9CA9AE;
+    background-color: #fff;
+
+    &.xs {
+        width: 550px;
+    }
+
+    ::placeholder {
+        color: #9CA9AE;
     }
 }

@@ -67,5 +67,133 @@
             }
         }
     }
-    
+}
+
+.products-slider {
+    margin-bottom: 50px;
+
+    .slide-wrap {
+        display: flex !important;
+        justify-content: center;
+        width: 300px !important;
+    }
+}
+
+.categories-slider {
+    margin-bottom: 50px;
+
+    .slide-wrap {
+        display: flex !important;
+        justify-content: center;
+        width: 400px !important;
+    }
+}
+
+.category-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 380px;
+    height: 400px;
+    padding-bottom: 40px;
+    background-size: cover;
+
+    &__name {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        padding: 18px 0 18px 30px;
+        font-size: 18px;
+        background-color: rgba($color: #fff, $alpha: .9);
+        text-transform: uppercase;
+
+        .icon {
+            margin-right: 15px;
+            font-size: 36px;
+            color: #DCA370;
+        }
+    }
+}
+
+.review-slider {
+    .slide-wrap {
+        display: flex;
+        justify-content: center;
+        width: 400px !important;
+    }
+}
+
+.review {
+    width: 380px;
+    height: 230px;
+    padding: 25px 15px;
+    border: 1px solid #9CA9AE;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__user {
+        &-photo {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-size: cover;
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+
+            .icon {
+                font-size: 14px;
+                color: #EAB704;
+            }
+        }
+    }
+
+    &__rating {
+        margin-top: 10px;
+    }
+
+    &__text {
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
+.add-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 100px;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 60px;
+    background-color: rgba($color: #9CA9AE, $alpha: .1);
+
+    &__heading {
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+        padding: 15px;
+    }
+
+    .form-control:last-child {
+        margin-top: 20px;
+    }
 }
