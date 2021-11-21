@@ -1,0 +1,122 @@
+.footer {
+    background-image: url('../../img/footer-bg-left.png'), url('../../img/footer-bg-right.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom left, bottom right;
+    background-color: #5D7686;
+    color: #fff;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+
+    &__logo {
+        align-self: start;
+    }
+
+    &__nav {
+        li {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #fff;
+        }
+    }
+
+    &__note {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: #526978;
+    }
+
+    &__info {
+        &-item {
+            display: flex;
+            margin-bottom: 20px;
+
+            .icon {
+                color: #DCA370;
+                margin-right: 15px;
+            }
+
+            .icon-marker {
+                font-size: 22px;
+            }
+
+            .icon-watch {
+                font-size: 20px;
+            }
+
+            .icon-email {
+                font-size: 15px;
+            }
+
+            a {
+                color: #DCA370;
+                text-decoration: underline;
+            }
+
+        }
+
+        &-title {
+            width: 140px;
+            font-weight: 500;
+        }
+
+        &-value {
+            line-height: 24px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+
+            .icon {
+                margin-right: 15px;
+                font-size: 22px;
+                color: #DCA370;
+            }
+        }
+
+        a {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .social {
+            &__title {
+                margin: 20px 0;
+            }
+
+            &__links {
+                display: flex;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 29px;
+                    height: 29px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        align-self: start;
+                    }
+                }
+            }
+        }
+    }
+}
