@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Alpaka</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <a class="header__top-item" href="tel:++380968132214">
+          <span class="icon icon-phone-voice"></span>
+          +38 096 813 22 14
+        </a>
+
+        <div class="header__top-item">
+          <span class="icon icon-user"></span>
+          Вхід / Реєстрація
+        </div>
+      </div>
+
+      <div class="header__body">
+        <a href="index.html">
+          <img class="logo" src="img/logo.svg" />
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="active" href="index.html">Головна</a>
+            </li>
+            <li>
+              <a href="about.html">Про нас</a>
+            </li>
+            <li>
+              <a href="#">Категорії</a>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="search-form" action="#">
+          <input class="search-form__input type="text">
+          <button class="search-form__btn">
+            <span class="icon icon-search"></span>
+          </button>
+        </form>
+
+        <div class="selected">
+          <span class="icon icon-heart"></span>
+          <div class="count">3</div>
+        </div>
+
+        <div class="selected">
+          <span class="icon icon-shopping"></span>
+          <div class="count">3</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="main-slider js-main-banner">
+        <div class="main-slider__slide" style="background-image: url(img/main-banner.jpg);"></div>
+        <div class="main-slider__slide" style="background-image: url(img/main-banner.jpg);"></div>
+        <div class="main-slider__slide" style="background-image: url(img/main-banner.jpg);"></div>
+        <div class="main-slider__slide" style="background-image: url(img/main-banner.jpg);"></div>
+      </div>
+
+      <div class="section-heading js-products-new-arrows">
+        Новинки
+      </div>
+
+      <div class="products-slider js-products-new">
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label new">Новинка</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label stock">Акції</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label new">Новинка</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label stock">Акції</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading js-categories-arrows">
+        Категорії
+      </div>
+
+      <div class="categories-slider js-categories-slider">
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-furniture"></span>
+              дитячі меблі
+            </div>
+          </a>
+        </div>
+
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-textile"></span>
+              дитячий текстиль
+            </div>
+          </a>
+        </div>
+
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-tent"></span>
+              дитячий інвентар
+            </div>
+          </a>
+        </div>
+
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-furniture"></span>
+              дитячі меблі
+            </div>
+          </a>
+        </div>
+
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-textile"></span>
+              дитячий текстиль
+            </div>
+          </a>
+        </div>
+
+        <div class="slide-wrap">
+          <a href="#" class="category-preview" style="background-image: url(img/main-banner.jpg);">
+            <div class="category-preview__name">
+              <span class="icon icon-tent"></span>
+              дитячий інвентар
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="section-heading js-products-popular-arrows">
+        Популярні товари
+      </div>
+
+      <div class="products-slider js-products-popular">
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label new">Новинка</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="product-preview">
+            <div class="product-preview__label popular">Популярне</div>
+            <div class="product-preview__favorite added">
+              <span class="icon icon-heart"></span>
+            </div>
+
+            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+
+            <div class="product-preview__name">Виг вам</div>
+            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+            <div class="product-preview__code">Артикул: 15026</div>
+
+            <div class="product-preview__prices">
+              <div class="product-preview__discount">3600 грн</div>
+              <div class="product-preview__price">3100 грн</div>
+            </div>
+
+            <div class="product-preview__buy">
+              <span class="icon icon-shopping"></span>
+              Купити
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading js-review-arrows">
+        Популярні товари
+      </div>
+
+      <div class="review-slider js-review-slider">
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-wrap">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__user-photo" style="background-image: url(img/main-banner.jpg);"></div>
+              <div class="review__user-name">
+                Анна Савчук
+                <div class="review__rating">
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-star-fill"></span>
+                  <span class="icon icon-start"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__text">
+              Сьогодні отримала замовлення. Я просто у захваті!!! Всі товари брала по шаленій знижці, переживала за
+              якість. Але це просто космос! Спасибі вам величезне!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-review">
+        <div class="btn md">Залишати відгук</div>
+      </div>
+    </main>
+
+    <form action="#" class="contacts-form">
+      <div class="contacts-form__heading">
+        Написати нам
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="input xs" placeholder="Ім'я" />
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="input xs" placeholder="E-mail" />
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="input xs" placeholder="Телефон" />
+      </div>
+
+      <div class="form-control">
+        <textarea class="input xs" placeholder="Коментар..."></textarea>
+      </div>
+
+      <div class="form-control">
+        <div class="btn md">Відправити</div>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <a href="index.html">
+          <img class="footer__logo" src="img/logo.svg" />
+        </a>
+
+        <ul class="footer__nav">
+          <li>
+            <a class="active" href="index.html">Головна</a>
+          </li>
+          <li>
+            <a href="about.html">Про нас</a>
+          </li>
+          <li>
+            <a href="#">Категорії</a>
+          </li>
+          <li>
+            <a href="#">Контакти</a>
+          </li>
+        </ul>
+
+        <div class="footer__info">
+          <div class="footer__info-item">
+            <span class="icon icon-marker"></span>
+            <span class="footer__info-title">Адреса:</span>
+            <span class="footer__info-value">
+              м. Кам’янець-Подільський, <br />
+              вул. Драгоманова 12/1
+            </span>
+          </div>
+
+          <div class="footer__info-item">
+            <span class="icon icon-watch"></span>
+            <span class="footer__info-title">Режим роботи:</span>
+            <span class="footer__info-value">
+              ПН - ПТ 9:00 - 20:00<br />
+              Сб - Нд 10:00 - 19:00
+            </span>
+          </div>
+
+          <div class="footer__info-item">
+            <span class="icon icon-email"></span>
+            <span class="footer__info-title">E-mail</span>
+            <span class="footer__info-value">
+              <a href="mailto:iralipskaa@gmail.com">iralipskaa@gmail.com</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__contacts-title">
+            <span class="icon icon-phone-voice"></span>
+            Телефони
+          </div>
+
+          <a href="tel:+38 096 813 22 14">+38 096 813 22 14</a>
+          <a href="tel:+38 096 813 22 14">+38 067 500 82 78</a>
+
+          <div class="social__title">Ми в соцмережах:</div>
+
+          <div class="social__links">
+            <a href="#"><img src="img/fb.jpg"/></a>
+            <a href="#"><img src="img/inst.jpg"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__note">
+        2021 Copyright
+      </div>
+    </footer>
+    <script src="js/pages/index.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
