@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Контакти</title>
+</head>
+
+<body>
+    <%= _.template(require('./../includes/header.html').default)() %>
+
+        <main class="container">
+            <div class="contacts-map-wrapper">
+                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%90%D0%B3%D0%BE%D1%80%D0%B0+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts__item">
+                    <img class="contacts__item-logo" src="img/logo2.svg">
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-marker"></span>
+                        Адреса:
+                    </div>
+
+                    <div class="contacts__item-address">
+                        м. Кам’янець-Подільський <br>
+                        вул. Драгоманова 12/1
+                    </div>
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-email"></span>
+                        E-mail:
+                    </div>
+
+                    <a class="contacts__item-email" href="mailto:iralipskaa@gmail.com">iralipskaa@gmail.com</a>
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-phone-voice"></span>
+                        Телефони:
+                    </div>
+
+                    <a class="contacts__item-phone" href="tel:+380968132214">+38 096 813 22 14</a>
+                    <a class="contacts__item-phone" href="tel:+380675008278">+38 067 500 82 78</a>
+                    <a class="contacts__item-phone" href="tel:+380680356881">+38 068 035 68 81</a>
+
+                </div>
+
+                <div class="contacts__item">
+                    <img class="contacts__item-logo" src="img/logo2.svg">
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-marker"></span>
+                        Адреса:
+                    </div>
+
+                    <div class="contacts__item-address">
+                        м. Хмельницький <br>
+                        вул. Січових Стрільців 2/3
+                    </div>
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-email"></span>
+                        E-mail:
+                    </div>
+
+                    <a class="contacts__item-email" href="mailto:iralipskaa@gmail.com">iralipskaa@gmail.com</a>
+
+                    <div class="contacts__item-title">
+                        <span class="icon icon-phone-voice"></span>
+                        Телефони:
+                    </div>
+
+                    <a class="contacts__item-phone" href="tel:+380968132214">+38 096 813 22 14</a>
+                    <a class="contacts__item-phone" href="tel:+380675008278">+38 067 500 82 78</a>
+                    <a class="contacts__item-phone" href="tel:+380680356881">+38 068 035 68 81</a>
+
+                </div>
+            </div>
+        </main>
+
+        <%= _.template(require('./../includes/footer.html').default)() %>
+</body>
+
+</html>

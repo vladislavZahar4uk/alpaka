@@ -299,3 +299,76 @@
         }
     }
 }
+
+.contacts-map-wrapper {
+    margin-bottom: 40px;
+    border: 1px solid #85969C;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 125px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 275px;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 24px;
+        border: 2px solid #DCA370;
+
+        &:first-child {
+            margin-right: 50px;
+        }
+
+        &-logo {
+            width: 120px;
+            margin-bottom: 7px;
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            color: #9CA9AE;
+
+            .icon {
+                margin-right: 10px;
+                color: #DCA370;
+            }
+
+            .icon-marker {
+                font-size: 20px;
+            }
+
+            .icon-email {
+                font-size: 13px;
+            }
+
+            .icon-phone-voice {
+                font-size: 13px;
+            }
+        }
+
+        &-address {
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        &-email {
+            margin-bottom: 5px;
+            color: #2094FF;
+            text-decoration: underline;
+        }
+
+        &-phone {
+            margin-bottom: 8px;
+        }
+    }
+}
