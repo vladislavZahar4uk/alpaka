@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css" />
+
+        <title>Категорії</title>
+    </head>
+    <body>
+        <%= _.template(require('./../includes/header.html').default)() %>
+
+        <main class="container">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="#">
+                        Головна
+                        <span class="icon icon-arr-right"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Категорії
+                        <span class="icon icon-arr-right"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Дитячі меблі
+                    </a>
+                </li>
+            </ul>
+
+            <div class="categories-wrap">
+                <div class="categories js-categories">
+
+                    <div class="category js-category">
+                        <div class="category-header js-category-trigger">
+                            <span class="icon icon-furniture"></span>
+                                Дитячі меблі
+                            <span class="icon-arrow-top"></span>
+                        </div>
+
+                        <div class="subcategories">
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Постільна білизна
+                                    <span class="icon-arrow-top"></span>
+                                </div>
+
+                                <div class="subcategory__items">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Ковдри
+                                </div>
+                            </div>
+
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Наматрацники
+                                </div>
+                            </div>
+
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Покривала на ліжка
+                                </div>
+                            </div>
+
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Комплекти в ліжечко для немовлят
+                                </div>
+                            </div>
+
+                            <div class="subcategory">
+                                <div class="subcategory-header">
+                                    Пелюшки
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="category js-category">
+                        <div class="category-header js-category-trigger">
+                            <span class="icon icon-textile"></span>
+                                Дитячий текстиль
+                            <span class="icon-arrow-top"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="category js-category">
+                        <div class="category-header js-category-trigger">
+                            <span class="icon icon-baby-body"></span>
+                                Дитячий одяг
+                            <span class="icon-arrow-top"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="category js-category">
+                        <div class="category-header js-category-trigger">
+                            <span class="icon icon-tent"></span>
+                                Дитячий інвентар
+                            <span class="icon-arrow-top"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="filter">
+                        <span class="icon-filter"></span>
+                        <span class="filter-title">Ціна:</span>
+
+                        <span class="placeholder">від</span>
+                        <input class="input price-from" type="text" placeholder="100">
+
+                        <span class="placeholder">до</span>
+                        <input class="input price-to" type="text" placeholder="10000">
+
+                        <label class="checkbox" for="ckb1">
+                            <input class="non-display" type="checkbox" id="ckb1">
+
+                            <span class="checkbox-border"></span>
+                            <span class="icon icon-ok"></span>
+                            Акційні товари
+                        </label>
+
+
+                        <label class="checkbox" for="ckb2">
+                            <input class="non-display" type="checkbox" id="ckb2">
+
+                            <span class="checkbox-border"></span>
+                            <span class="icon icon-ok"></span>
+                            Нові товари
+                        </label>
+
+
+                        <label class="checkbox" for="ckb3">
+                            <input class="non-display" type="checkbox" id="ckb3">
+
+                            <span class="checkbox-border"></span>
+                            <span class="icon icon-ok"></span>
+                            Популярні товари
+                        </label>
+
+                    </div>
+
+                    <div class="section-heading">Дитячі меблі</div>
+
+                    <div class="products-grid">
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="product-preview">
+                            <div class="product-preview__label stock">Акції</div>
+                            <div class="product-preview__favorite added">
+                                <span class="icon icon-heart"></span>
+                            </div>
+            
+                            <div class="product-preview__bg" style="background-image: url(img/main-banner.jpg);"></div>
+            
+                            <div class="product-preview__name">Виг вам</div>
+                            <div class="product-preview__description">Виг вам для девочки вигвам единорог нежно</div>
+                            <div class="product-preview__code">Артикул: 15026</div>
+            
+                            <div class="product-preview__prices">
+                                <div class="product-preview__discount">3600 грн</div>
+                                <div class="product-preview__price">3100 грн</div>
+                            </div>
+            
+                            <div class="btn orange">
+                                <span class="icon icon-shopping"></span>
+                                Купити
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <span class="pagination__item">
+                                <span class="icon icon-arr-left"></span>
+                            </span>
+                            <span class="pagination__item">2</span>
+                            <span class="pagination__item active">3</span>
+                            <span class="pagination__item">...</span>
+                            <span class="pagination__item">
+                                <span class="icon icon-arr-right"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%= _.template(require('./../includes/footer.html').default)() %>
+
+        <script src="js/pages/categories.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>

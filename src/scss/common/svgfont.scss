@@ -29,90 +29,99 @@ $icomoon-font-path: "../fonts" !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-price-tag:before {
+.icon-filter:before {
   content: "\e900";
 }
-.icon-like:before {
+.icon-ok:before {
   content: "\e901";
 }
-.icon-delivery-truck:before {
+.icon-arrow-top:before {
   content: "\e902";
 }
-.icon-checkmark:before {
+.icon-price-tag:before {
   content: "\e903";
 }
-.icon-watch:before {
+.icon-like:before {
   content: "\e904";
 }
-.icon-user:before {
+.icon-delivery-truck:before {
   content: "\e905";
 }
-.icon-textile:before {
+.icon-checkmark:before {
   content: "\e906";
 }
-.icon-tent:before {
+.icon-watch:before {
   content: "\e907";
 }
-.icon-start:before {
+.icon-user:before {
   content: "\e908";
 }
-.icon-star-fill:before {
+.icon-textile:before {
   content: "\e909";
 }
-.icon-shopping:before {
+.icon-tent:before {
   content: "\e90a";
 }
-.icon-search:before {
+.icon-start:before {
   content: "\e90b";
 }
-.icon-phone-voice:before {
+.icon-star-fill:before {
   content: "\e90c";
 }
-.icon-marker:before {
+.icon-shopping:before {
   content: "\e90d";
 }
-.icon-heart-fill:before {
+.icon-search:before {
   content: "\e90e";
 }
-.icon-heart:before {
+.icon-phone-voice:before {
   content: "\e90f";
 }
-.icon-furniture:before {
+.icon-marker:before {
   content: "\e910";
 }
-.icon-arr-right:before {
+.icon-heart-fill:before {
   content: "\e911";
 }
-.icon-arrow-right:before {
+.icon-heart:before {
   content: "\e912";
 }
-.icon-arrow-left:before {
+.icon-furniture:before {
   content: "\e913";
 }
-.icon-arr-left:before {
+.icon-arr-right:before {
   content: "\e914";
 }
-.icon-email:before {
+.icon-arrow-right:before {
   content: "\e915";
 }
-.icon-silk:before {
+.icon-arrow-left:before {
   content: "\e916";
 }
-.icon-rattle:before {
+.icon-arr-left:before {
   content: "\e917";
 }
-.icon-curtains:before {
+.icon-email:before {
   content: "\e918";
 }
-.icon-christian-chalice:before {
+.icon-silk:before {
   content: "\e919";
 }
-.icon-blanket:before {
+.icon-rattle:before {
   content: "\e91a";
 }
-.icon-bed:before {
+.icon-curtains:before {
   content: "\e91b";
 }
-.icon-baby-body:before {
+.icon-christian-chalice:before {
   content: "\e91c";
+}
+.icon-blanket:before {
+  content: "\e91d";
+}
+.icon-bed:before {
+  content: "\e91e";
+}
+.icon-baby-body:before {
+  content: "\e91f";
 }

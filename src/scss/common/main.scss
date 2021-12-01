@@ -247,3 +247,44 @@ body {
         color: #9CA9AE;
     }
 }
+
+.non-display {
+    display: none;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .checkbox-border {
+        content: '';
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+        border: 1px solid #9CA9AE;
+    }
+
+    .icon {
+        position: absolute;
+        display: none;
+        top: 4px;
+        left: 1px;
+        font-size: 12px;
+        color: #DCA370;
+    }
+
+    input[type="checkbox"]:checked {
+
+        & + .checkbox-border {
+            border-color: #DCA370;
+
+            & + .icon {
+                display: block;
+            }
+        }
+
+
+    }
+}

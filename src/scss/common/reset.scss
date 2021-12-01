@@ -51,3 +51,7 @@ input, button {
 button {
   cursor: pointer;
 }
+
+input[type="checkbox"] {
+  display: none;
+}
